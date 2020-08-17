@@ -1,4 +1,4 @@
-***Settings***
+*** Settings ***
 Library  SeleniumLibrary
 Resource  Variables.robot
 Library  File.py
