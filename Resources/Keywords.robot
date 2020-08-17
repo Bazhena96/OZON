@@ -3,7 +3,6 @@ Library  SeleniumLibrary
 Resource  Variables.robot
 Library  File.py
 *** Keywords ***
-  
 Get CSV
     [Arguments]  ${FilePath}
     ${Data} =  Read CSV File  ${FilePath}
@@ -11,6 +10,9 @@ Get CSV
 Load Page
     Open Browser  https://www.wish.com  chrome  executable_path=/usr/local/Caskroom/chromedriver/83.0.4103.39/chromedriver
     Set Browser Implicit Wait  5
+Load Page And Maximize Browser Window
+    Load Page
+    Maximize Browser Window
 Sign In
     [Arguments]  ${Credentions}
     Wait Until Page Contains Element  css=div.AuthenticationPage__PaneWrapper-wo9hra-4:nth-child(3) > form:nth-child(2) > div:nth-child(4)
