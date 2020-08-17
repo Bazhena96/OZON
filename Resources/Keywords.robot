@@ -44,7 +44,7 @@ Forgot Passsword
     Wait And Click  css=div.Button-sc-1rnmncq-0:nth-child(2)
 Create Account
      [Arguments]  ${name}  ${surname}  ${email}  ${password}
-     Wait And Click  css=div.bXoYVI:nth-child(2)
+     Wait And Click  css=div.omUxJ:nth-child(2)
      Wait And Click  css=.bHVRfW > div:nth-child(1) > input:nth-child(1)
      Input Text  css=.bHVRfW > div:nth-child(1) > input:nth-child(1)  ${name}
      Wait And Click  css=.AuthenticationPage__NameTextInputWrapper-wo9hra-12 > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)
