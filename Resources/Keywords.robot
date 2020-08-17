@@ -37,11 +37,13 @@ Login With Facebook
     ${button count}  GET ELEMENT COUNT  css=div.AuthenticationPage__PaneWrapper-wo9hra-4:nth-child(3) > div:nth-child(4) > div:nth-child(2)
     Run Keyword If  ${button count} >0  Facebook_Login
 Forgot Passsword
+    [Arguments]  ${email}
     Wait And Click  css=.AuthenticationPage__HelpLink-wo9hra-8
     Wait And Click  css=.WishTextInput-sc-1k4jzwj-3
     Input Text  css=.WishTextInput-sc-1k4jzwj-3  ${email}
     Wait And Click  css=div.Button-sc-1rnmncq-0:nth-child(2)
 Create Account
+        [Arguments]  ${name}  ${surname}  ${email}  ${password}
         Wait And Click  css=div.bXoYVI:nth-child(2)
         Wait And Click  css=.bHVRfW > div:nth-child(1) > input:nth-child(1)
         Input Text  css=.bHVRfW > div:nth-child(1) > input:nth-child(1)  ${name}
