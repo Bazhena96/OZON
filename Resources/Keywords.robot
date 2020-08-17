@@ -33,9 +33,13 @@ Login with Many Invalid Credentials
       run keyword and continue on failure  Load Page
       run keyword and continue on failure  Sign In  ${login scenario}
     END
+Verify Error Message For Invalid Login Scenarios
+    Wait Until Page Contains Element  css=#consent_blackbar
 Login With Facebook
     ${button count}  GET ELEMENT COUNT  css=div.AuthenticationPage__PaneWrapper-wo9hra-4:nth-child(3) > div:nth-child(4) > div:nth-child(2)
     Run Keyword If  ${button count} >0  Facebook_Login
+Verify login With Facebook
+    Wait Until Page Contains   Facebook
 Forgot Passsword
     [Arguments]  ${email}
     Wait And Click  css=.AuthenticationPage__HelpLink-wo9hra-8
