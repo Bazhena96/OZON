@@ -1,3 +1,3 @@
 *** Variables ***
-${invalid credential path CSV}  data.csv
+${invalid credential path CSV}  /Users/bazhenakashchuk/Ozon/Resources/data.csv
 
