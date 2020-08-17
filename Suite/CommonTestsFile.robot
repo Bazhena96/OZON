@@ -17,10 +17,10 @@ User login with facebook
      Close Browser
 User forgot the password
      Load Page
-     Forgot Passsword
+     Forgot Passsword  bazhenkak@gmail.com
      Close Browser
 User create account
     Load Page
-    Create Account
+    Create Account  Bazhena  Ivanova  bazhenkak@gmail.com  change13
     Close Browser
     
