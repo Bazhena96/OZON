@@ -1,25 +1,25 @@
-***Settings***
+*** Settings ***
 Library  SeleniumLibrary
 Resource  ../Resources/Keywords.robot
 Resource  ../Resources/Variables.robot
 
 *** Test Cases ***
-# User Load The Page
-    # Load Page
-    # Close All Browsers
-# Login Scenarious
-    # ${InvalidLoginScenarios} =  Get CSV  ${INVALID_CREDENTIALS_PATH_CSV}
-    # Login with Many Invalid Credentials  ${InvalidLoginScenarios}
-    # Close Browser
-# User Login With Facebook
-    # Load Page
-    # Login With Facebook
-    # Close Browser
-# User Forgot The Password
-    # Load Page
-    # Forgot Passsword
-    # Close Browser
-User Create Account
+User load the page
+     Load Page
+     Close All Browsers
+Login scenarious
+     ${invalid login scenarios} =  Get CSV  ${invalid credential path CSV}
+     Login with Many Invalid Credentials  ${invalid login scenarios}
+     Close Browser
+User login with facebook
+     Load Page
+     Login With Facebook
+     Close Browser
+User forgot the password
+     Load Page
+     Forgot Passsword
+     Close Browser
+User create account
     Load Page
     Create Account
     Close Browser
