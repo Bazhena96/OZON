@@ -29,9 +29,10 @@ Facebook_Login
     Wait And Click  css=div.AuthenticationPage__PaneWrapper-wo9hra-4:nth-child(3) > div:nth-child(4) > div:nth-child(2)
 Login with Many Invalid Credentials
     [Arguments]  ${InvalidLoginScenarios}
-    :FOR  ${LoginScenario}  IN  @{InvalidLoginScenarios}
-    \  run keyword and continue on failure  Load Page
-    \  run keyword and continue on failure  Sign In  ${LoginScenario}
+    FOR  ${LoginScenario}  IN  @{InvalidLoginScenarios}
+      run keyword and continue on failure  Load Page
+      run keyword and continue on failure  Sign In  ${LoginScenario}
+    END
 Login With Facebook
     ${BUTTONS_COUNT}  GET ELEMENT COUNT  css=div.AuthenticationPage__PaneWrapper-wo9hra-4:nth-child(3) > div:nth-child(4) > div:nth-child(2)
     Run Keyword If  ${BUTTONS_COUNT} >0  Facebook_Login
