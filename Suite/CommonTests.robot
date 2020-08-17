@@ -10,10 +10,12 @@ User load the page
 Login scenarious
    ${invalid login scenarios} =  Get CSV  ${invalid credential path CSV}
    Login with Many Invalid Credentials  ${invalid login scenarios}
+   Verify Error Message For Invalid Login Scenarios
    Close Browser
 User login with facebook
    Load Page And Maximize Browser Window
    Login With Facebook
+   Verify login With Facebook
    Close Browser
 User forgot the password
    Load Page And Maximize Browser Window
