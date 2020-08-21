@@ -36,8 +36,8 @@ Login with Many Invalid Credentials
 Verify Error Message For Invalid Login Scenarios
     Wait Until Page Contains Element  css=#consent_blackbar
 Login With Facebook
-    ${button count}  GET ELEMENT COUNT  css=div.AuthenticationPage__PaneWrapper-wo9hra-4:nth-child(3) > div:nth-child(4) > div:nth-child(2)
-    Run Keyword If  ${button count} >0  Facebook_Login
+    ${button count}  Get Element Count  css=div.AuthenticationPage__PaneWrapper-wo9hra-4:nth-child(3) > div:nth-child(4) > div:nth-child(2)
+    Run Keyword If  ${button count} >0  Facebook Login
 Verify login With Facebook
     Wait Until Page Contains   Facebook
 Forgot Passsword
@@ -47,16 +47,16 @@ Forgot Passsword
     Input Text  css=.WishTextInput-sc-1k4jzwj-3  ${email}
     Wait And Click  css=div.Button-sc-1rnmncq-0:nth-child(2)
 Create Account
-     [Arguments]  ${name}  ${surname}  ${email}  ${password}
-     Wait And Click  css=div.omUxJ:nth-child(2)
-     Wait And Click  css=.bHVRfW > div:nth-child(1) > input:nth-child(1)
-     Input Text  css=.bHVRfW > div:nth-child(1) > input:nth-child(1)  ${name}
-     Wait And Click  css=.AuthenticationPage__NameTextInputWrapper-wo9hra-12 > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)
-     Input Text  css=.AuthenticationPage__NameTextInputWrapper-wo9hra-12 > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)  ${surname}
-     Wait And Click  css=div.AuthenticationPage__PaneWrapper-wo9hra-4:nth-child(2) > form:nth-child(2) > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)
-     Input Text  css=div.AuthenticationPage__PaneWrapper-wo9hra-4:nth-child(2) > form:nth-child(2) > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)  ${email}
-     Wait And Click  css=div.WishTextInput__Wrapper-sc-1k4jzwj-0:nth-child(3) > div:nth-child(1) > input:nth-child(1)
-     Input Text  css=div.WishTextInput__Wrapper-sc-1k4jzwj-0:nth-child(3) > div:nth-child(1) > input:nth-child(1)  ${password}
-     Wait And Click  css=div.AuthenticationPage__PaneWrapper-wo9hra-4:nth-child(2) > form:nth-child(2) > div:nth-child(4)
+    [Arguments]  ${name}  ${surname}  ${email}  ${password}
+    Wait And Click  css=div.omUxJ:nth-child(2)
+    Wait And Click  css=.bHVRfW > div:nth-child(1) > input:nth-child(1)
+    Input Text  css=.bHVRfW > div:nth-child(1) > input:nth-child(1)  ${name}
+    Wait And Click  css=.AuthenticationPage__NameTextInputWrapper-wo9hra-12 > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)
+    Input Text  css=.AuthenticationPage__NameTextInputWrapper-wo9hra-12 > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)  ${surname}
+    Wait And Click  css=div.AuthenticationPage__PaneWrapper-wo9hra-4:nth-child(2) > form:nth-child(2) > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)
+    Input Text  css=div.AuthenticationPage__PaneWrapper-wo9hra-4:nth-child(2) > form:nth-child(2) > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)  ${email}
+    Wait And Click  css=div.WishTextInput__Wrapper-sc-1k4jzwj-0:nth-child(3) > div:nth-child(1) > input:nth-child(1)
+    Input Text  css=div.WishTextInput__Wrapper-sc-1k4jzwj-0:nth-child(3) > div:nth-child(1) > input:nth-child(1)  ${password}
+    Wait And Click  css=div.AuthenticationPage__PaneWrapper-wo9hra-4:nth-child(2) > form:nth-child(2) > div:nth-child(4)
 
         
