@@ -7,7 +7,7 @@ User load the page
     Load Page And Maximize Browser Window
     Close All Browsers
 Login scenarious
-    ${invalid login scenarios} =  Get CSV  ${Invalid credential path CSV}
+    ${invalid login scenarios} =  Get CSV  ${INVALID CREDENTIAL PATH TO CSV}
     Login with Many Invalid Credentials  ${invalid login scenarios}
     Verify Error Message For Invalid Login Scenarios
     Close Browser
